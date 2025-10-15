@@ -26,6 +26,10 @@ export function createAPI(moduleName, config = {})
     }
 
     return {
+        async fetchPaginated()
+        {
+            
+        },
         async fetchAll()
         {
             const res = await fetch(API_URL);
