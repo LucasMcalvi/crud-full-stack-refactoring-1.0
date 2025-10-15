@@ -112,7 +112,7 @@ async function loadStudents()
     {
         const resPerPage = parseInt(document.getElementById('resultsPerPage').value, 10) || limit;
         const data = await studentsAPI.fetchPaginated(currentPage, resPerPage);
-        console.log(data);
+        //console.log(data);
         renderStudentTable(data.students);
         totalPages = Math.ceil(data.total / resPerPage);
         document.getElementById('pageInfo').textContent = `Página ${currentPage} de ${totalPages}`;
